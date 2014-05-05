@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>assign2</title>
+	<meta name="description" content="" />
+	
+	<script src="js/swfobject.js"></script>
+	<script>
+		var flashvars = {
+		};
+		var params = {
+			menu: "true",
+			scale: "noScale",
+			allowFullscreen: "true",
+			allowScriptAccess: "always",
+			bgcolor: "",
+			wmode: "direct" // can cause issues with FP settings & webcam
+		};
+		var attributes = {
+			id:"assign2"
+		};
+		swfobject.embedSWF(
+			"assign2.swf", 
+			"altContent", "800", "600", "11.1", 
+			"expressInstall.swf", 
+			flashvars, params, attributes);
+	</script>
+	<style>
+		html, body { height:100%; overflow:hidden; }
+		body { margin:20px; }
+	</style>
+</head>
+<body style="background-color:black;">
+	<div id="altContent" style="margin:0px auto;">
+		not working bro
+	</div>
+</body>
+</html>
